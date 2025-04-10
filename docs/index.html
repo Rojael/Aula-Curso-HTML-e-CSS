@@ -1,128 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos FPS</title>
-    <style>
-        /* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos FPS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
 
-/* Estilo do corpo da página */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f2f2f2;
-  color: #333;
-  padding: 20px;
-}
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
 
-/* Títulos */
-h1, h2 {
-  color: #2c3e50;
-  margin-bottom: 15px;
-}
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
 
-/* Container principal (article) */
-article {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    .card {
+      background-color: #2a2a2a;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
 
-/* Parágrafos */
-p {
-  margin-bottom: 15px;
-}
+    .card:hover {
+      transform: scale(1.05);
+    }
 
-/* Lista de jogos */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
 
-li {
-  margin-bottom: 20px;
-}
+    .card-content {
+      padding: 15px;
+    }
 
-/* Imagens */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 10px;
-}
+    .card-title {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+    }
 
-/* Links de navegação */
-nav ul {
-  display: flex;
-  gap: 15px;
-  margin: 20px 0;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  background-color: #3498db;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: #2980b9;
-}
-
-    </style>
-    
+    .card-description {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-    <article>
-        <header>
-            <h1>Este é um breve resumo sobre alguns jogos FPS que acho legal</h1>
-        </header>
+  <header>
+    Top Jogos FPS
+  </header>
 
-        <section>
-            <h2>O que é um jogo FPS?</h2>
-            <!-- Uma breve explicação sobre o que é um jogo FPS -->
-            <p>
-                Jogos FPS (ou First-Person Shooters) são jogos em que a visão do personagem é em primeira pessoa e a mesma do jogador, para maior imersão.
-                Títulos do gênero são geralmente focados em tiro, ação com armas de fogo ou brancas para combate corpo a corpo, com algumas variações.
-                FPS também pode significar “Frames por Segundo”, que representa o número de quadros individuais exibidos em um segundo em um jogo ou animação.
-            </p>
-        </section>
+  <div class="container">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_Modern_Warfare_II_Key_Art.jpg" alt="Call of Duty Modern Warfare 2">
+      <div class="card-content">
+        <h3 class="card-title">Call of Duty: Modern Warfare 2</h3>
+        <p class="card-description">Um dos FPS mais populares, com gráficos realistas e gameplay intenso.</p>
+      </div>
+    </div>
 
-        <section>
-            <h2>Imagem de um jogo FPS</h2>
-            <img src="OIP.jpg" alt="Imagem de jogo FPS">
-        </section>
+    <div class="card">
+      <img src="ps-f2p-val-console-launch-16x9.jpg" alt="Valorant">
+      <div class="card-content">
+        <h3 class="card-title">Valorant</h3>
+        <p class="card-description">FPS tático da Riot Games que mistura tiro preciso com habilidades especiais.</p>
+      </div>
+    </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Página 2</a></li>
-                <li><a href="pagina3.html">Página 3</a></li>
-            </ul>
-        </nav>
+    <div class="card">
+      <img src="cs2.jpg" alt="Counter Strike 2">
+      <div class="card-content">
+        <h3 class="card-title">Counter-Strike 2</h3>
+        <p class="card-description">Sequência do clássico CS:GO, com engine nova e melhorias visuais.</p>
+      </div>
+    </div>
 
-        <section>
-            <h2>Alguns jogos FPS</h2>
-            <ul>
-                <li>
-                    Valorant<br>
-                    <img src="ps-f2p-val-console-launch-16x9.jpg" alt="Imagem do jogo Valorant">
-                </li>
-                <li>
-                    CS2<br>
-                    <img src="cs2.jpg" alt="Imagem do jogo CS2">
-                </li>
-            </ul>
-        </section>
-    </article>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Doom_Cover.jpg" alt="DOOM">
+      <div class="card-content">
+        <h3 class="card-title">DOOM (2016)</h3>
+        <p class="card-description">Um retorno frenético e sangrento à franquia lendária de jogos de tiro.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
